@@ -31,3 +31,14 @@ const checkValidNumber = input => {
     checkValidNumber(userInput.value);
     userInput.value = '';
   });
+
+  userInput.addEventListener('keydown', e => {
+    if (e.key === 'Enter') {
+      checkValidNumber(userInput.value);
+      userInput.value = '';
+    }
+  });
+  
+  clearBtn.addEventListener('click', () => {
+    resultsDiv.textContent = '';
+  });
