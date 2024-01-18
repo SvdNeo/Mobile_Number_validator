@@ -26,3 +26,8 @@ const checkValidNumber = input => {
     );
     resultsDiv.appendChild(pTag);
   };
+
+  checkBtn.addEventListener('click', () => {
+    checkValidNumber(userInput.value);
+    userInput.value = '';
+  });
